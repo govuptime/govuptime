@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Government Uptime</title>
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+        <script src="libs/gauge.min.js"></script>
+        <script src="libs/jquery-3.3.1.min.js"></script>
+        <script>
+            function loadMainGauge(passedData) {
+
+            }
+
+            $.getJSON("data.json", function(result){
+                loadMainGauge(result);
+            });
+        </script>
+    </head>
+    <body style="background-color: 001D5A; font-family: 'Open Sans',sans-serif;">
+        <img src="kiwi.svg" alt="Kiwi standing on oval">
+        <div style="text-align:center; color: white;" class="font-effect-3d-float">
+            <h1 style="font-size: 52px;">Government Uptime</h1>
+        </div>
+    </body>
+</html>
